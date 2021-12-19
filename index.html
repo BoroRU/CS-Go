@@ -5,12 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="img/logo%20(7).png">
+    <link rel="icon" type="image/png" href="img/logo-main.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -21,13 +19,11 @@
 <body>
 <header class="header">
     <div class="container not-really">
-        <div class="row justify-content-between modif">
-            <div class="col-12 col-lg-2">
-                <a href="#" class="logo">
-                    <img src="img/logo%20(7).png" class="logo__img">
-                </a>
+        <div class="row justify-content-between flex-nowrap flex-now  modif">
+            <div class="col-12 col-lg-2 col-sm-6">
+                <a href="#" class="logo"></a>
             </div>
-            <div class="col-12 col-lg-3 offset-lg-1">
+            <div class="col-12 col-lg-3 offset-lg-1 col-sm-6">
                 <nav class="social">
                     <ul class="social__list d-flex align-items-center">
                         <li class="social__iteam">
@@ -40,7 +36,7 @@
                         <li class="social__iteam">
 <!--                            <noindex>-->
                                 <a href="#" class="social__sub" target="_blank">
-                                    <img src="img/social.png">
+                                    <img alt="" src="img/social.png">
                                 </a>
 <!--                            </noindex>-->
 
@@ -48,7 +44,7 @@
                         <li class="social__iteam">
 <!--                            <noindex>-->
                                 <a href="#" class="social__sub" target="_blank">
-                                    <img src="img/social-fb.png">
+                                    <img alt="" src="img/social-fb.png">
                                 </a>
 <!--                            </noindex>-->
                         </li>
@@ -81,33 +77,33 @@
             </div>
         </div>
     </div>
-
     <div class="slaider">
         <div class="header-slid">
-            <img src="img/header-slider-1.png" >
+            <img class="header-slid__img" src="img/header-slider-1.png" >
         </div>
         <div class="header-slid">
-            <img src="img/header-slider-2.png">
+            <img class="header-slid__img" src="img/header-slider-2.png">
         </div>
         <div class="header-slid">
-            <img src="img/header-slider-3.png">
+            <img  class="header-slid__img" src="img/header-slider-3.png">
         </div>
     </div>
 </header>
+
 <section class="main">
     <div class="container">
         <div class="row">
         <div class="col-12 col-lg-12">
             <h2 class="title">Расписание и результаты</h2>
-            <div class="battles d-flex">
-                <button type="button" class="battles__btn changes">Matches</button>
-                <button type="button" class="battles__btn">Battles</button>
-            </div>
+            <div class="battles d-flex"  >
+                <button class="battles__btn" data-tab="#tab_1" type="button">Matches</button>
+                <button class="battles__btn" data-tab="#tab_2"  type="button">Battles</button>
         </div>
         </div>
-        <div class="row responsive " id="slider">
-            <div class="col-12 col-lg-3">
-                <div class="match">
+        </div>
+        <div class="row responsive change iteam" id="tab_1" >
+            <div class="col-12 col-lg-3" >
+                <div class="match  ">
                     <div class="match__title d-flex justify-content-around align-items-center">
                         <h5 class="match__intro">Asia Minor: Play-Off</h5>
                         <div class="data-time d-block">
@@ -414,130 +410,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row my-slide  iteam" id="tab_2" >
             <div class="col-12 col-lg-3">
                 <div class="match">
-                    <div class="match__title d-flex justify-content-around align-items-center">
-                        <h5 class="match__intro">Asia Minor: Play-Off</h5>
-                        <div class="data-time d-block">
-                            <span class="data">29 Oct</span>
-                            <span class="time">19:00</span>
-                        </div>
+                    <div class="match__title d-flex  align-items-center match-tit">
+                        <h5 class="match__intro">Group Stage</h5>
                     </div>
                     <div class="match__team d-flex">
                         <a href="#" class="match__sub">
-                            <img src="img/image%20319.png">
-                        </a>
-                        <a href="#" class="match__sub">
-                            <img src="img/team-pic-4.png">
+                            <img src="img/img-2-P.png">
                         </a>
                     </div>
                     <div class="match__name ">
-                        <div class="people d-flex justify-content-between align-items-center">
-                            <p class="people__name">Regina Watson</p>
-                            <div class="numbers">3.22</div>
+                        <div class="people d-flex">
+                            <div class="peopele__offer">
+                                <p class="people__name">Group A</p>
+                                <p class="people__name">Group B</p>
+                            </div>
+                            <div class="numbers sell">match #5</div>
                         </div>
-                        <div class="people d-flex justify-content-between align-items-center  ">
-                            <p class="people__name">Kathryn Jones</p>
-                            <div class="numbers indent">53.22</div>
-                        </div>
+
                         <div class="match__sponsor d-flex justify-content-between">
                             <div class="sponsor-span d-flex">
-                                <span class="sponsor__span">Starts in: </span>
-                                <span class="sponsor__span"> 5 hours 39 min </span>
-                                <span class="sponsor__span"> • Bо 3 </span>
-                            </div>
-                            <div class="sponsor-image">
-                                <a href="#" class="sponsor__sub">
-                                    <img src="img/logo-sponsor.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="overlay">
-                            <button class="overlay__btn" type="button">WHATCH LIVE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3">
-                <div class="match">
-                    <div class="match__title d-flex justify-content-around align-items-center">
-                        <h5 class="match__intro">Asia Minor: Play-Off</h5>
-                        <div class="data-time d-block">
-                            <span class="data">29 Oct</span>
-                            <span class="time">19:00</span>
-                        </div>
-                    </div>
-                    <div class="match__team d-flex">
-                        <a href="#" class="match__sub">
-                            <img src="img/image%20319.png">
-                        </a>
-                        <a href="#" class="match__sub">
-                            <img src="img/team-pic-4.png">
-                        </a>
-                    </div>
-                    <div class="match__name ">
-                        <div class="people d-flex justify-content-between align-items-center">
-                            <p class="people__name">Regina Watson</p>
-                            <div class="numbers">3.22</div>
-                        </div>
-                        <div class="people d-flex justify-content-between align-items-center  ">
-                            <p class="people__name">Kathryn Jones</p>
-                            <div class="numbers indent">53.22</div>
-                        </div>
-                        <div class="match__sponsor d-flex justify-content-between">
-                            <div class="sponsor-span d-flex">
-                                <span class="sponsor__span">Starts in: </span>
-                                <span class="sponsor__span"> 5 hours 39 min </span>
-                                <span class="sponsor__span"> • Bо 3 </span>
-                            </div>
-                            <div class="sponsor-image">
-                                <a href="#" class="sponsor__sub">
-                                    <img src="img/logo-sponsor.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="overlay">
-                            <button class="overlay__btn" type="button">WHATCH LIVE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3">
-                <div class="match">
-                    <div class="match__title d-flex justify-content-around align-items-center">
-                        <h5 class="match__intro">Asia Minor: Play-Off</h5>
-                        <div class="data-time d-block">
-                            <span class="data">29 Oct</span>
-                            <span class="time">19:00</span>
-                        </div>
-                    </div>
-                    <div class="match__team d-flex">
-                        <a href="#" class="match__sub">
-                            <img src="img/image%20319.png">
-                        </a>
-                        <a href="#" class="match__sub">
-                            <img src="img/team-pic-4.png">
-                        </a>
-                    </div>
-                    <div class="match__name ">
-                        <div class="people d-flex justify-content-between align-items-center">
-                            <p class="people__name">Regina Watson</p>
-                            <div class="numbers">3.22</div>
-                        </div>
-                        <div class="people d-flex justify-content-between align-items-center  ">
-                            <p class="people__name">Kathryn Jones</p>
-                            <div class="numbers indent">53.22</div>
-                        </div>
-                        <div class="match__sponsor d-flex justify-content-between">
-                            <div class="sponsor-span d-flex">
-                                <span class="sponsor__span">Starts in: </span>
-                                <span class="sponsor__span"> 5 hours 39 min </span>
-                                <span class="sponsor__span"> • Bо 3 </span>
-                            </div>
-                            <div class="sponsor-image">
-                                <a href="#" class="sponsor__sub">
-                                    <img src="img/logo-sponsor.png">
-                                </a>
+                                <span class="sponsor__span">Map: Erangel </span>
                             </div>
                         </div>
                         <div class="overlay">
@@ -593,66 +489,6 @@
                                 <p class="people__name">Group B</p>
                             </div>
                             <div class="numbers sell">match #2</div>
-                        </div>
-
-                        <div class="match__sponsor d-flex justify-content-between">
-                            <div class="sponsor-span d-flex">
-                                <span class="sponsor__span">Map: Erangel </span>
-                            </div>
-                        </div>
-                        <div class="overlay">
-                            <button class="overlay__btn" type="button">WHATCH LIVE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3">
-                <div class="match">
-                    <div class="match__title d-flex  align-items-center match-tit">
-                        <h5 class="match__intro">Group Stage</h5>
-                    </div>
-                    <div class="match__team d-flex">
-                        <a href="#" class="match__sub">
-                            <img src="img/img-2-P.png">
-                        </a>
-                    </div>
-                    <div class="match__name ">
-                        <div class="people d-flex">
-                            <div class="peopele__offer">
-                                <p class="people__name">Group A</p>
-                                <p class="people__name">Group B</p>
-                            </div>
-                            <div class="numbers sell">match #3</div>
-                        </div>
-
-                        <div class="match__sponsor d-flex justify-content-between">
-                            <div class="sponsor-span d-flex">
-                                <span class="sponsor__span">Map: Erangel </span>
-                            </div>
-                        </div>
-                        <div class="overlay">
-                            <button class="overlay__btn" type="button">WHATCH LIVE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3">
-                <div class="match">
-                    <div class="match__title d-flex  align-items-center match-tit">
-                        <h5 class="match__intro">Group Stage</h5>
-                    </div>
-                    <div class="match__team d-flex">
-                        <a href="#" class="match__sub">
-                            <img src="img/img-2-P.png">
-                        </a>
-                    </div>
-                    <div class="match__name ">
-                        <div class="people d-flex">
-                            <div class="peopele__offer">
-                                <p class="people__name">Group A</p>
-                                <p class="people__name">Group B</p>
-                            </div>
-                            <div class="numbers sell">match #4</div>
                         </div>
 
                         <div class="match__sponsor d-flex justify-content-between">
@@ -761,22 +597,9 @@
             <button type="button" class="prev slick-arrow"></button>
             <button type="button" class="next slick-arrow"></button>
         </div>
+
         </div>
-
-
-<!--    <div class="container">-->
-<!--        <div class="row responsive " id="slider">-->
-
-<!--        </div>-->
-<!--        <div class="offer-arrows d-flex justify-content-center">-->
-<!--            <button type="button" class="prev slick-arrow"></button>-->
-<!--            <button type="button" class="next slick-arrow"></button>-->
-<!--        </div>-->
-<!--        </div>-->
-
-
-
-
+    </div>
 </section>
 <section class="registration">
     <div class="container">
@@ -791,7 +614,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-2 ">
+            <div class="col-12 col-lg-2 col-sm-3 ">
                 <div class="registr__offer d-flex">
                     <div class="registr__img">
                         <img class="" alt="" src="img/img-trohy.png">
@@ -802,7 +625,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-2 distance ">
+            <div class="col-12 col-lg-2 col-sm-3 distance ">
                 <div class="registr__offer d-flex">
                     <div class="registr__img">
                         <img class="" alt="" src="img/img-sec-1.png">
@@ -813,7 +636,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-2 ">
+            <div class="col-12 col-lg-2 col-sm-3">
                 <div class="registr__end ">
                     <div class="registr__img">
                         <img class="" alt="" src="img/ing-sec.png">
@@ -824,13 +647,14 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 col-lg-4 offset-lg-7">
-                <div class="Okay  d-flex">
-                    <div class="okay__img">
-                        <img alt="" src="img/img-ok.png">
+            <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-7 d-flex justify-content-center">
+                    <div class="Okay  d-flex">
+                        <div class="okay__img">
+                            <img alt="" src="img/img-ok.png">
+                        </div>
+                        <p class="okay__text">Вы зарегистрированы </p>
                     </div>
-                    <p class="okay__text">Вы зарегистрированы </p>
                 </div>
             </div>
         </div>
@@ -848,9 +672,6 @@
                     <div class="timer d-flex align-items-center justify-content-center">
                         <span class="timer__span">Осталось:</span>
                         <span class="timer__time"></span>
-                        <span class="timer__text"></span>
-                        <span class="timer__time"></span>
-                        <span class="timer__text"></span>
                     </div>
                 </div>
                 <div class="table__main">
@@ -963,8 +784,8 @@
                 </div>
                 </div>
             <div class="col-12 col-lg-5 offset-lg-7">
-                <div class="nav">
-                    <ul class="nav__menu d-flex justify-content-between">
+                <div class="nav-wrap">
+                    <ul class="nav__menu d-flex justify-content-between justify-content-sm-around">
                         <li class="nav__iteam">
                             <a href="#" target="_blank" class="nav__link">
                                 SUPPORT
@@ -990,8 +811,8 @@
 
 
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
