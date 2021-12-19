@@ -26,8 +26,8 @@ $('.my-slide').slick({
     infinite: false,
     speed: 300,
     arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     dotsClass:'slick-btn',
     prevArrow:$('.prev'),
     nextArrow: $('.next'),
@@ -46,6 +46,15 @@ $('.my-slide').slick({
             breakpoint: 1120,
             settings: {
                 slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
                 slidesToScroll: 2,
                 infinite: true,
                 dots: true
@@ -71,8 +80,8 @@ $('.responsive').slick({
     infinite: false,
     speed: 300,
     arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     dotsClass:'slick-btn',
     prevArrow:$('.prev'),
     nextArrow: $('.next'),
@@ -91,6 +100,15 @@ $('.responsive').slick({
             breakpoint: 1120,
             settings: {
                 slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
                 slidesToScroll: 2,
                 infinite: true,
                 dots: true
@@ -163,10 +181,12 @@ $('.next').on('click', function() {
     const tabsIteams = document.querySelectorAll('.iteam');
 
     tabsBtn.forEach(function (iteam) {
+        console.log(this)
         iteam.addEventListener('click', function () {
             let currentBtn = iteam;
             let tabId = currentBtn.getAttribute("data-tab");
             let currentTab = document.querySelector(tabId);
+            console.log(this)
 
             if (!currentBtn.classList.contains('active')) {
                 tabsBtn.forEach(function (iteam) {
@@ -174,18 +194,19 @@ $('.next').on('click', function() {
                 })
                 tabsIteams.forEach(function (iteam) {
                     iteam.classList.remove('change');
-
                 })
 
                 currentBtn.classList.add('active');
                 currentTab.classList.add('change');
             }
 
+            $('.my-slide').slick('setPosition');
         });
 
     });
 
 document.querySelector('.battles__btn').click()
+
 
 
 
