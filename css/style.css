@@ -87,7 +87,7 @@ a{
     margin: 25px 0 25px;
 }
 .main-btn-wrap{
-    /*margin: 220px  0 100px;*/
+    margin: 180px  0 100px;
 }
 .btn-wrap__main{
     padding: 15px 20px;
@@ -547,12 +547,20 @@ a{
 }
 
                     /*RESPONSIV*/
+@media(max-width:1220px){
+    .main-btn-wrap{
+        margin: 0;
+    }
+}
 @media(max-width:1024px){
     .offer-main{
         margin: 40px 0 35px;
     }
     .modif{
         max-width: 600px;
+    }
+    .main-btn-wrap{
+        margin: 0;
     }
     .registr__offer::after{
         transform: translate(-25px,15px);

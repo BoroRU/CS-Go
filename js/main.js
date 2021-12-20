@@ -31,7 +31,7 @@ $('.my-slide').slick({
     dotsClass:'slick-btn',
     prevArrow:$('.prev'),
     nextArrow: $('.next'),
-    // autoplay: 1000,
+    autoplay: 1000,
     responsive: [
         {
             breakpoint: 1820,
@@ -85,7 +85,7 @@ $('.responsive').slick({
     dotsClass:'slick-btn',
     prevArrow:$('.prev'),
     nextArrow: $('.next'),
-    // autoplay: 1000,
+    autoplay: 1000,
     responsive: [
         {
             breakpoint: 1820,
@@ -168,7 +168,7 @@ $('.next').on('click', function() {
             e.preventDefault();
             const id = smoothLink.getAttribute('href');
 
-            document.querySelector('.header').scrollIntoView({
+            document.querySelector('#header').scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
